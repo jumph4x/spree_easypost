@@ -32,6 +32,9 @@ require 'spree/testing_support/url_helpers'
 # Requires factories defined in lib/spree_easypost/factories.rb
 require 'spree_easypost/factories'
 
+# Grabbed this straight from https://github.com/EasyPost/easypost-ruby/blob/master/README.md hope the EasyPost fellas approve
+EasyPost.api_key = 'cueqNZUb3ldeWTNX7MU3Mel8UXtaAMUi'
+
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
 
